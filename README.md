@@ -57,13 +57,13 @@ Le joueur démarre avec un nombre limité de munitions et de santé. Son but est
 
 2. **Cloner le dépôt** :
    ```bash
-   git clone https://github.com/votre-utilisateur/votre-repo.git
+   git clone https://github.com/Oriloo/Infinite-Cube-Frenzy.git
    ```
 
 3. **Compiler et Exécuter** :
    Utilisez votre IDE Java préféré (comme IntelliJ IDEA ou Eclipse) ou compilez en ligne de commande :
    ```bash
-   javac -d bin -sourcepath src src/com/testgame/testgame/GameApp.java
+   javac -d bin -sourcepath src src/main/java/com/testgame/testgame/GameApp.java
    java -cp bin com.testgame.testgame.GameApp
    ```
 
