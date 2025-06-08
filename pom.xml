@@ -107,4 +107,11 @@
             </plugin>
         </plugins>
     </build>
+
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <url>https://maven.pkg.github.com/Oriloo/Infinite-Cube-Frenzy</url>
+        </repository>
+    </distributionManagement>
 </project>
