@@ -52,7 +52,8 @@ Le joueur démarre avec un nombre limité de munitions et de santé. Son but est
 ## Installation
 
 1. **Prérequis** :
-    - [Java JDK 11+](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html)
+    - [Java JDK 17+](https://adoptium.net/)
+    - [Maven](https://maven.apache.org/)
     - [JavaFX](https://openjfx.io/)
 
 2. **Cloner le dépôt** :
@@ -61,10 +62,14 @@ Le joueur démarre avec un nombre limité de munitions et de santé. Son but est
    ```
 
 3. **Compiler et Exécuter** :
-   Utilisez votre IDE Java préféré (comme IntelliJ IDEA ou Eclipse) ou compilez en ligne de commande :
+   Utilisez votre IDE Java préféré (comme IntelliJ IDEA ou Eclipse) ou lancez directement via Maven :
    ```bash
-   javac -d bin -sourcepath src src/main/java/com/testgame/testgame/GameApp.java
-   java -cp bin com.testgame.testgame.GameApp
+   mvn javafx:run
+   ```
+   Pour générer un JAR exécutable :
+   ```bash
+   mvn package
+   java -jar target/InfiniteCubeFrenzy-1.0-SNAPSHOT-shaded.jar
    ```
 
 ## Utilisation
@@ -73,7 +78,11 @@ Le joueur démarre avec un nombre limité de munitions et de santé. Son but est
 - **Commandes** :
     - **Déplacement** : Utilisez les flèches directionnelles.
     - **Attaque Normale** : Appuyez sur la barre d'espace pour tirer un projectile.
-    - **Collecte de Bonus** : Passez sur un pack de munitions ou une vie supplémentaire pour le collecter.
+- **Collecte de Bonus** : Passez sur un pack de munitions ou une vie supplémentaire pour le collecter.
+
+## Déploiement
+
+Le projet est configuré pour être publié sur **GitHub Packages**. Une fois le code prêt, créez une nouvelle release depuis l'onglet *Releases* de GitHub. Le workflow `Maven Package` se déclenchera automatiquement, compilera le jeu et publiera le JAR dans le dépôt Maven du projet.
 
 ## Captures d'écran
 
