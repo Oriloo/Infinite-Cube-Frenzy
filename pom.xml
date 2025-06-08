@@ -113,5 +113,9 @@
             <id>github</id>
             <url>https://maven.pkg.github.com/Oriloo/Infinite-Cube-Frenzy</url>
         </repository>
+        <snapshotRepository>
+            <id>github</id>
+            <url>https://maven.pkg.github.com/Oriloo/Infinite-Cube-Frenzy</url>
+        </snapshotRepository>
     </distributionManagement>
 </project>
